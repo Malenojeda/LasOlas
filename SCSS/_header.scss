@@ -1,0 +1,97 @@
+@import "colores";
+$medida_general:17px;
+@mixin font {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.sticky{
+    width: 100%;
+    padding-top: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: $bg_sticky;
+}
+
+/*Logo*/
+.nav .justify-content-center{
+
+    justify-content: center;
+    padding-right: 20%;
+    position: relative;
+}
+
+/*Nav izquierdo*/
+.icono-nav-izquierdo{
+    z-index: -100;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    padding-top:30px
+}
+.hamburguesa{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 30px;
+    position: fixed;
+}
+
+.offcanvas-body{
+
+    &__li{
+        list-style: none;
+        list-style-type: none;
+        padding-top: 20px;
+        font-size: ($medida_general)+2;
+        letter-spacing: 3px;
+        color:$font_color;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: bolder;
+        }
+    &__a{
+        text-decoration: none;
+        padding-top: 5px;
+        color:$font_color;
+        &:hover{
+            color:$font_color;
+            text-decoration-line: underline;
+        }
+    }
+    }
+
+/*Nav derecho*/
+
+.nav-item{
+    &:hover{
+        background-color: none;
+    }
+
+}
+.nav-link{
+    &:hover{
+        transform: scale(1.1);
+        background-color: none;
+    }
+}
+.bag{
+    width: 20px;
+}
+
+.login{
+    width: 20px;
+}
+
+.form-buscar{
+    padding-top: 8px;
+    font-size: ($medida_general)-6;
+    
+}
+
+input{
+    width: 80%;
+    text-align: center;
+    border: solid, 1px;
+    height: 40%;
+}

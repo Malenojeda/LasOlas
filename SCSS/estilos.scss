@@ -1,0 +1,33 @@
+@import "footer";
+@import "mediaqueries";
+@import "colores";
+@import "main";
+@import "header";
+
+@mixin font {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+$medida_general:17px;
+
+/*GENERAL*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+

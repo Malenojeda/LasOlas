@@ -1,0 +1,66 @@
+@import "colores";
+$medida_general:17px;
+@mixin font {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.form{
+    margin-top: 3%;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0%;
+
+}
+
+.boton-newsletter{
+    color:rgb(146, 144, 144);
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    width: 110%;
+    &:hover{
+        text-decoration-line: underline;
+    }
+}
+.text-center{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.footer__li{
+    list-style: none;
+}
+
+.footer__a{
+    font-size: ($medida_general)-5;
+    color: $font_color;
+    &:hover{
+        color: $font_color;
+    }
+}
+
+
+.container .my-5{
+    margin:0%
+}
+
+marquee{
+    a{
+
+        font-size: 25px;
+        color:rgb(247, 243, 244);
+        text-decoration: none;
+        list-style-type: none;
+        font-family: 'Space Grotesk', sans-serif;
+        letter-spacing: 3px;
+        background-color:rgba(133, 97, 76, 0.664); 
+        &:hover{
+            color:$font_color;
+            text-decoration: none;
+            list-style-type: none;
+
+        }
+    }
+}
