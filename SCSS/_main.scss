@@ -13,6 +13,7 @@ $medida_general:17px;
     gap: 10%;
     justify-content:center;
     padding-top:9%;
+    position: static;
     margin-bottom: 20%;
     &__a{
         display: grid;
@@ -44,9 +45,6 @@ $medida_general:17px;
         color: $font_color;
     }
 }
-
-
-
 
 /*Texto sobre nosotros*/
 .nav-nosotros{

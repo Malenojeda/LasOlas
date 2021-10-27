@@ -5,14 +5,6 @@ $medida_general:17px;
     text-transform: uppercase;
 }
 
-
-.form{
-    margin-top: 3%;
-    font-family: 'Space Grotesk', sans-serif;
-    padding: 0%;
-
-}
-
 .boton-newsletter{
     color:rgb(146, 144, 144);
     height: 100%;
@@ -24,22 +16,32 @@ $medida_general:17px;
         text-decoration-line: underline;
     }
 }
+
 .text-center{
     font-family: 'Space Grotesk', sans-serif;
 }
 
-
-.footer__li{
-    list-style: none;
-}
-
-.footer__a{
-    font-size: ($medida_general)-5;
-    color: $font_color;
-    &:hover{
-        color: $font_color;
+.footer{
+    position: static;
+    &__li{
+        list-style: none;
     }
+    &__a{
+        font-size: ($medida_general)-5;
+        color: $font_color;
+        &:hover{
+            color: $font_color;
+        }
+    }
+    .form{
+        margin-top: 3%;
+        font-family: 'Space Grotesk', sans-serif;
+        padding: 0%;
+    
+    }
+    
 }
+
 
 
 .container .my-5{
@@ -48,7 +50,6 @@ $medida_general:17px;
 
 marquee{
     a{
-
         font-size: 25px;
         color:rgb(247, 243, 244);
         text-decoration: none;
