@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Envíos a todo el país. Todos los medios de pago. Tienda online de piezas únicas y artesanales ❤. ">
     <meta name="keywords" content="cerámica artesanal, cerámica, regalo, artesanal, regalos originales, tienda online, macetas, tazas, vajilla, platos, plantas, envíos, envíos a todo el país, cuotas, deco, decoracion">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Las Olas Ceramica</title>
     <link rel="stylesheet" href="CSS/estilos.css"/>
     <link rel="icon" href="Multimedia/logo.svg" sizes="25x25">
@@ -23,46 +23,59 @@
     <header class="sticky">
 
     <!--Navbar izquierdo-->
-    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img class="hamburguesa" src="Multimedia/hamburguesa.svg" alt="">
-    </a>
-    <div class="offcanvas offcanvas-start container-fluid" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-        <div class="offcanvas-header">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img class="hamburguesa" src="Multimedia/hamburguesa.svg" alt="Menú">
+        </a>
+        <div class="offcanvas offcanvas-start  " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="offcanvas-body__ul"> 
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="#img-tienda"> Macetas  </a></li>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="#img-tienda"> Tazas </a></li>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="#img-tienda" >Platos </a></li>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a"href="#img-tienda"> Porta Sahumerios </a></li>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="#img-tienda" > Otros productos </a>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="#img-tienda" > SALE!</a></li>
+                    <li class="offcanvas-body__li">
+                        <form action="buscar" id="buscar" class="form-buscar-oculto">
+                            <input class="input-font" placeholder="Buscar">
+                        </form>
+                    </li> 
+                    <hr />
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="comocomprar.html"> Cómo comprar </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="offcanvas-body">
-            <ul class="offcanvas-body__ul">
-                <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="#img-tienda"> Macetas  </a></li>
-                <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="#img-tienda"> Tazas </a></li>
-                <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="#img-tienda" >Platos </a></li>
-                <li class="offcanvas-body__li"><a class="offcanvas-body__a"href="#img-tienda"> Porta Sahumerios </a></li>
-                <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="#img-tienda" > Otros productos </a>
-                <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="#img-tienda" > SALE!</a></li>
-                <hr />
-                <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="comocomprar.html"> Cómo comprar </a></li>
-            </ul>
-        </div>
-    </div>
     <!--Fin navbar izquierdo-->
+    <!--Logo-->
+        <div class="nav justify-content">
+            <a href="index.html">
+                <img class="col-auto"  src="Multimedia/logo.svg" alt="Las Olas ">
+            </a>
+        </div>
+    <!--fin logo-->
 
     <!--Navbar derecho-->
-    <ul class="nav justify-content-end">
-        <div class="nav justify-content-center">
-            <a href="index.html">
-                <img class="container-fluid"  src="Multimedia/logo.svg" alt="Las Olas ">
+        <ul class="navbar-derecha">
+            <li class="navbar-derecha__li">
+                <a class="navbar-derecha__a" href="cuenta.html"><img class="login" src="Multimedia/login.svg" alt="Login">
+                </a>
+            </li>
+            <li class="navbar-derecha__li">
+                <a  class="navbar-derecha__a"href="#"><img  class="bag" src="Multimedia/bag.svg" alt="Carrito">
+                </a>
+            </li>
+            <a  class="navbar-derecha__a"href="carrito.html">
+                <li class="navbar-derecha__a-li">
+                    <form action="buscar" id="buscar" class="form-buscar">
+                        <input class="input-font" placeholder="BUSCAR">
+                    </form>
+                </li>
             </a>
-        </div>
-        <li class="nav-item">
-            <a class="nav-link" href="cuenta.html"><img class="login" src="Multimedia/login.svg" alt="Login">
-            </a>
-        </li>
-        <li class="nav-item">
-            <a  class="nav-link active"href="#"><img  class="bag" src="Multimedia/bag.svg" alt="Carrito">
-            </a>
-        </li>
-        <form action="buscar" class="form-buscar"> <input class="input-font" placeholder="BUSCAR" ></form>
-    </ul>
+        </ul>
     <!--Fin navbar derecho-->
-
     </header>
 
     <main>
@@ -114,59 +127,54 @@
 
     <!--Banner envios-->
     <marquee behavior="alternate" scrolldelay="100" scrollamount="10" direction="left" loop="infinite" onmouseout="this.start()" onmouseover="this.stop()"><a href="comocomprar.html" target="_blank">🚀ENVÍOS A TODO EL PAÍS 🎁 Todos los medios de pago 🚀 ENVÍOS A TODO EL PAÍS 🎁 Todos los medios de pago 🚀ENVÍOS A TODO EL PAÍS 🎁Todos los medios de pago 🚀ENVÍOS A TODO EL PAÍS 🎁 Todos los medios de pago 🚀</a><a href="URL que Redirecciona al tema 2" target="_blank"></a></marquee>
+    </div>
     <!--fin banner envios-->
 
-    <div>
-        <footer>
-            <!--Newsletter-->
-                <section class="form">
-                    <form action="">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-auto">
-                                <p class="pt-2">
-                                    <strong>QUÉRES RECIBIR NOVEDADES Y PROMOS?</strong>
-                                </p>
-                            </div>
-                        <div class="col-md-5 col-12">
-                            <div class="form-outline form-white mb-4">
-                                <input type="email" id="form5Example2" class="form-control" placeholder="Ingresá tu email" />
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <button type="button" class="boton-newsletter"> Suscribirme</button>
-                        </div>
-                        </div>
-                    </form>
-                </section>
-            <!--Fin newsletter-->
-                <hr />
-                <section class="text-center">
-                    <p> 💌 lasolas@gmail.com / 📞Whatsapp 1178958672 - Lun a Vier 9:00 a 17:00hs
-                    </p>
-                </section>
-
-                <section class="text-center">
-                    <div class="text-center">
-                        <div>
-                            <li class="footer__li"></li><a  class="footer__a" href="nosotros.html">Sobre Las Olas</a></li>
-                            <li class="footer__li"><a class="footer__a" href="contacto.html">Dejanos un mensaje</a></li>
-                            <section class="text-center">
-                                <a style="color: #dd4b39;" href="#!" role="button"><i class="fab fa-google fa-lg"></i></a>
-                                <a style="color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram fa-lg"></i></a>
-                            </section>
+    <footer>
+        <!--Newsletter-->
+        <section class="form">
+            <form action="">
+                <div class="row d-flex justify-content-center">
+                    <div class="div-newsletter">
+                        <p class="pt-2">
+                            <strong>QUÉRES RECIBIR NOVEDADES Y PROMOS?</strong>
+                        </p>
                     </div>
-                </section>
-
+                    <div class="col-md-5 col-12">
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" id="form5Example2" class="form-control" placeholder="Ingresá tu email" />
+                        </div>
+                    </div>
+                    <div class="">
+                        <button type="button" class="boton-newsletter"> Suscribirme</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+            <!--Fin newsletter-->
+        <hr />
+        <section class="text-center">
+            <p> 💌 lasolas@gmail.com / 📞Whatsapp 1178958672 - Lun a Vier 9:00 a 17:00hs
+            </p>
+        </section>
+        <section class="text-center">
+            <div class="text-center">
+                <div>
+                    <li class="footer__li"></li><a  class="footer__a" href="nosotros.html">Sobre Las Olas</a></li>
+                    <li class="footer__li"><a class="footer__a" href="contacto.html">Dejanos un mensaje</a></li>
+                    <section class="text-center">
+                        <a style="color: #dd4b39;" href="#!" role="button"><i class="fab fa-google fa-lg"></i></a>
+                        <a style="color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram fa-lg"></i></a>
+                    </section>
             </div>
-        </footer>
-    </div>
+        </section>
+    </footer>
 
     <!-- fin de footer-->
 
-
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script  type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
 </body>

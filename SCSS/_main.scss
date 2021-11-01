@@ -9,12 +9,11 @@ $medida_general:17px;
 .nav-productos{
     display: grid;
     float: center;
-    grid-template-columns: repeat(auto-fill, 25%);
-    gap: 10%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7%;
     justify-content:center;
     padding-top:9%;
-    position: static;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
     &__a{
         display: grid;
         text-decoration: none;
@@ -26,7 +25,7 @@ $medida_general:17px;
         }
     }
     &__img{
-        width: 100%;
+        width: 90%;
         justify-content: center;
         float: center;
         text-align:center;
@@ -43,6 +42,7 @@ $medida_general:17px;
         margin-top: 3%;
         font-size: ($medida_general)-2;
         color: $font_color;
+        
     }
 }
 
@@ -71,7 +71,7 @@ $medida_general:17px;
         height: 100%;
     }
     &__div-mayusc{
-        font-size: $medida_general+1;
+        font-size: ($medida_general)+1;
     }
     &__a{
         color: $font_color;
@@ -100,29 +100,51 @@ $medida_general:17px;
 
 .main-form{
     display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: repeat(1, 1fr);
     padding: 5%;
     gap: 2px 4%;
     &__texto{
-        grid-area: 1 / 1 / 2 / 2;
-        text-align: left;
         align-self: center;
         justify-self: center;
+        padding-bottom: 2%;
         &-p{
             font-family: 'Space Grotesk', sans-serif;
-            font-size: ($medida_general)+1;
+            font-size: ($medida_general);
+            text-align: center;
         }
     }
     &__form{
-        grid-area: 1 / 2 / 2 / 3; 
+        grid-area: 2 / 2 / 2 / 1; 
         text-align: left;
     }
-    .col-auto{
+    .col-auto__form{
         font-family: 'Space Grotesk', sans-serif;
         .form-control{
             text-align: left;
         }
     }
+}
+
+/*Carrito*/
+
+.nav-carrito{
+    margin: 5%;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: ($medida_general)-1;
+    text-align: center;
+}
+
+.boton-tienda{
+    margin-top: 2%;
+    width: 20%;
+    background-color: $font_color;
+    color: white;
+    border: none;
+    font-size: ($medida_general)-2;
+    border-radius: 0px;
+    &:hover{ 
+        transform: scale(1.1);
+    }
+    
+
 }

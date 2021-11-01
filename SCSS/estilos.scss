@@ -18,10 +18,186 @@ $medida_general:17px;
 }
 
 body{
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 2%;
+    padding-right: 2%;
     width: 100%;
-    
+    @media only screen and (min-width: 200px){
+        .col-auto{
+            width: 45%;
+            height: 11%;
+            margin-left: 23%;
+        }
+        .hamburguesa{
+            width: 7.5%;
+        }
+        .form-buscar{
+            display: none;
+        }
+        .form-buscar-oculto{
+            display: block;
+        }
+        .nav-productos{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0%;
+            width: 80%;
+            margin: auto;
+            &__img{
+                width: 100%;
+                
+            }
+        }
+        .main-form__texto-p{
+            font-size: ($medida_general)-3;
+        }
+        .nav-comprar__div{
+            font-size: ($medida_general)-3;
+
+        }
+        .nav-comprar__div-mayusc{
+            font-size: ($medida_general)-2;
+        }
+    }
+    @media only screen and (min-width: 320px){
+        .col-auto{
+            width: 45%;
+            height: 11%;
+            margin-left: 23%;
+        }
+        .hamburguesa{
+            width: 7.5%;
+        }
+        .form-buscar{
+            display: none;
+        }
+        .form-buscar-oculto{
+            display: block;
+        }
+        .nav-productos{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0%;
+            width: 80%;
+            margin: auto;
+            &__img{
+                width: 100%;
+                }
+            }
+        &__texto{
+            &-p{
+                font-size: ($medida_general)-1;
+            }
+        }
+        .nav-comprar__div{
+            font-size: ($medida_general)-3;
+        }
+        .nav-comprar__div-mayusc{
+            font-size: ($medida_general)-2;
+        }
+    }
+    @media only screen and (min-width: 576px){
+        .col-auto{
+            height: 14%;
+            margin-left: 25%;
+        }
+        .hamburguesa{
+            width: 5%;
+        }
+        .nav-productos{
+            &__a{
+                margin-top: 2%;
+            }
+            margin: auto;
+            width: 70%;
+            &__img{
+                width: 100%;
+            }
+            &__p{
+                margin-top: 0%;
+                
+            }
+            .nav-comprar__div{
+                font-size: ($medida_general)-2;
+            }
+            .nav-comprar__div-mayusc{
+                font-size: ($medida_general)-2;
+            }
+        }
+    }
+    @media only screen and (min-width: 768px){
+        .hamburguesa{
+            width: 5%;
+        }
+        .nav-productos{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10%;
+            row-gap: 2%;
+            width: 80%;
+        }
+        marquee{
+            margin-top: 20%;
+        }
+
+        .marquee-esp{
+            margin-top: 2%;
+        }
+
+        .main-form__texto-p{
+            font-size: ($medida_general)-2;
+        }
+
+        .nav-comprar__div{
+            font-size: ($medida_general)-2;
+        }
+
+    }
+    @media only screen and (min-width: 992px){
+        .sticky{
+            height: 110px;
+        }
+        .col-auto{
+            margin-left: 25%;
+        }
+        .hamburguesa{
+            width: 4%;
+        }
+        .form-buscar{
+            display: block;
+        }
+        .form-buscar-oculto{
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .sticky{
+            height: 110px;
+        }
+        .col-auto{
+            padding-bottom: 0.5%;
+            height: 17%;
+            margin-left: 23%;
+        }
+        .form-buscar{
+            display: block;
+        }
+        .form-buscar-oculto{
+            display: none;
+        }
+        .hamburguesa{
+            width: 2.5%;
+        }
+        .nav-productos{
+            display: grid;
+            float: center;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 7%;
+            justify-content:center;
+            padding-top:9%;
+            margin-bottom: 15%;
+        }
+        marquee{
+            margin-top: 0%;
+        }
+        
+    }
 }
 
 
