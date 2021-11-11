@@ -1,14 +1,8 @@
 @import "footer";
-@import "mediaqueries";
-@import "colores";
+@import "varios";
 @import "main";
 @import "header";
 
-@mixin font {
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-}
-$medida_general:17px;
 
 /*GENERAL*/
 *{
@@ -18,213 +12,214 @@ $medida_general:17px;
 }
 
 body{
-    padding-left: 2%;
-    padding-right: 2%;
     width: 100%;
-    @media only screen and (min-width: 200px){
-        .col-auto{
-            width: 45%;
-            height: 11%;
-            margin-left: 23%;
-        }
-        .hamburguesa{
-            width: 7.5%;
-        }
-        .form-buscar{
-            display: none;
-        }
-        .form-buscar-oculto{
-            display: block;
-        }
-        .nav-productos{
-            grid-template-columns: repeat(1, 1fr);
-            gap: 0%;
-            width: 80%;
-            margin: auto;
-            &__img{
-                width: 100%;
-                
-            }
-        }
-        .main-form__texto-p{
-            font-size: ($medida_general)-3;
-        }
-        .nav-comprar__div{
-            font-size: ($medida_general)-3;
-
-        }
-        .nav-comprar__div-mayusc{
-            font-size: ($medida_general)-2;
-        }
-        .boton-tienda{
-            width: 30%;
-            font-size: ($medida_general)-3;
-            }
-        }
+    padding-right: 2%;
+    padding-left: 2%;
+    /*PANTALLAS PEQUEÑAS*/
     @media only screen and (min-width: 320px){
-        .col-auto{
-            width: 45%;
-            height: 11%;
-            margin-left: 23%;
-        }
-        .hamburguesa{
-            width: 7.5%;
-        }
-        .form-buscar{
-            display: none;
-        }
-        .form-buscar-oculto{
-            display: block;
-        }
-        .nav-productos{
-            grid-template-columns: repeat(1, 1fr);
-            gap: 0%;
-            width: 80%;
-            margin: auto;
-            &__img{
-                width: 100%;
-                }
+        
+        /*Banner envios*/
+        .div-banner{
+            .p-banner{
+                font-size: 11px;
             }
-        &__texto{
-            &-p{
-                font-size: ($medida_general)-1;
-            }
-        }
-        .nav-comprar__div{
-            font-size: ($medida_general)-3;
-        }
-        .nav-comprar__div-mayusc{
-            font-size: ($medida_general)-2;
-        }
-        .boton-tienda{
-            width: 40%;
-            font-size: ($medida_general)-3;
-            }
-    }
-    @media only screen and (min-width: 576px){
-        .col-auto{
-            height: 14%;
-            margin-left: 25%;
-        }
-        .hamburguesa{
-            width: 5%;
-        }
-        .nav-productos{
-            &__a{
-                margin-top: 2%;
-            }
-            margin: auto;
-            width: 70%;
-            &__img{
-                width: 100%;
-            }
-            &__p{
-                margin-top: 0%;
-                
-            }
-            .nav-comprar__div{
-                font-size: ($medida_general)-2;
-            }
-            .nav-comprar__div-mayusc{
-                font-size: ($medida_general)-2;
-            }
-            .boton-tienda{
-                width: 30%;
-                font-size: ($medida_general)-3;
-                }
             
         }
-    }
-    @media only screen and (min-width: 768px){
-        .hamburguesa{
-            width: 5%;
+        /*Logo*/
+        .text-center{
+            .img-logo{
+                width: 80%;
+                padding-left: 25%;
+            }
         }
+        /*Productos tienda*/
+        .nav-productos{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0%;
+            width: 80%;
+            margin: auto;
+            &__img{
+                width: 100%;
+                }
+        }
+        .p-productos{
+            font-size: 2.5rem;
+        }
+        .col-md-5 .col-12{
+            padding: 0%;
+        }
+        /*Sección categoria Index*/
+        .titulo-categorias{
+            font-size: 2.6rem;
+        }
+        .div-categorias{ 
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 2%;
+            margin-top: 2%;
+            margin-bottom: 22%;
+        }
+    }
+    @media only screen and (min-width: 576px){
+        /*Banner envios*/
+        .div-banner{
+            .p-banner{
+                font-size: 1.2rem;
+            }
+        }
+        /*Logo*/
+        .text-center{
+            .img-logo{
+                width: 65%;
+                padding-left: 30%;
+            }
+        }
+        /*Productos tienda*/
+        .nav-productos{
+            padding-left: 0%;
+            }
+        .p-productos{
+                font-size: 3rem;
+            }
+        /*Sección categoria Index*/
+        .div-categorias{
+            margin-left: 4%;
+            margin-right: 4%;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 5%;
+            margin-bottom: 35%;
+        }
+        .titulo-categorias{
+            font-size: 3.2rem;
+        }
+        .col-md-5 .col-12{
+            padding: 0px;
+            margin: 0px;
+        }
+        /*Formulario de contacto*/
+        .main-form__texto-p{
+            font-size: 1.4rem;
+        }
+    }
+    /*PANTALLAS MEDIANAS*/
+    @media only screen and (min-width: 768px){
+
+        /*Banner Envios*/
+        .div-banner{
+            .p-banner{
+                font-size: 1.2rem;
+            }
+        }
+        /*Logo*/
+        .text-center{
+            .img-logo{
+                width: 60%;
+                padding-left: 32%;
+            }
+        }
+        /*Productos tienda*/
         .nav-productos{
             grid-template-columns: repeat(2, 1fr);
             gap: 10%;
             row-gap: 2%;
             width: 80%;
+            padding-left: 0px;
         }
-        marquee{
-            margin-top: 20%;
+        .p-productos{
+            font-size: 3.5rem;
         }
-
-        .marquee-esp{
-            margin-top: 2%;
-        }
-
+        /*Formulario contacto*/
         .main-form__texto-p{
-            font-size: ($medida_general)-2;
+            font-size: 1.5rem;
         }
-
-        .nav-comprar__div{
-            font-size: ($medida_general)-2;
+        /*Seccion categoria productos Index*/
+        .div-categorias{
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 5%;
+            margin-bottom: 10%;
         }
-        .boton-tienda{
-            width: 30%;
-            font-size: ($medida_general)-3;
-            }
-
+        .titulo-categorias{
+            font-size: 4rem;
+        }
+        .col-md-5 .col-12{
+            padding: 0px;
+            margin: 0px;
+        }
     }
+    /*PANTALLAS GRANDES*/
     @media only screen and (min-width: 992px){
-        .sticky{
-            height: 110px;
+        /*Logo*/
+        .text-center{
+            .img-logo{
+                width: 60%;
+                padding-left: 35%;
+            }
         }
-        .col-auto{
-            margin-left: 25%;
+        /*Productos tienda*/
+        .p-productos{
+            font-size: 3.5rem;
         }
-        .hamburguesa{
-            width: 4%;
+        /*Seccion categoria productos Index*/
+        .div-categorias{
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 3%;
+            margin-right: 0%;
+            margin-left: 0%;
+            margin-bottom: 5%;
         }
-        .form-buscar{
-            display: block;
+        .titulo-categorias{
+            font-size: 4rem;
         }
-        .form-buscar-oculto{
-            width: 20%;
-            display: none;
+        .col-md-5 .col-12{
+            padding: 0px;
+            margin: 0px;
         }
     }
     @media only screen and (min-width: 1024px) {
-        .sticky{
-            height: 110px;
+        /*Logo*/
+        .text-center{
+            .img-logo{
+                width: 56%;
+                padding-left: 37%;
+            }
         }
-        .col-auto{
-            padding-bottom: 0.5%;
-            height: 17%;
-            margin-left: 23%;
-        }
-        .form-buscar{
-            display: block;
-        }
-        .form-buscar-oculto{
-            display: none;
-        }
-        .hamburguesa{
-            width: 2.5%;
-        }
+        /*Productos tienda*/
         .nav-productos{
             display: grid;
             float: center;
             grid-template-columns: repeat(3, 1fr);
             gap: 7%;
             justify-content:center;
-            padding-top:9%;
-            margin-bottom: 15%;
+            padding-top:1%;
+            margin-bottom: 3%;
+            padding-left: 0%;
         }
-        marquee{
-            margin-top: 0%;
+        .p-productos{
+            font-size: 4rem;
         }
-        .boton-tienda{
-            width: 20%;
-            font-size: ($medida_general)-3;
-            }
-        
+        /*Footer*/
+        .row.d-flex.justify-content-center{
+            margin: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100%;
+        }
+        .div-boton{
+            padding: 0px;
+        }
+        /*Seccion categoria productos Index*/
+        .div-categorias{
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 3%;
+        }
+        .titulo-categorias{
+            font-size: 4rem;
+        }
+        .col-md-5 .col-12{
+            padding: 0px;
+            margin: 0px;
+        }
     }
 }
-
-
-
-
 
 
 

@@ -20,64 +20,75 @@
 
 <body>
     <header class="sticky">
-
+        <div class="div-banner">
+            <p class="p-banner">
+                Envios a todo el pais ♡ Todos los medios de pago
+            </p>
+        </div>
     <!--Navbar izquierdo-->
-        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img class="hamburguesa" src="Multimedia/hamburguesa.svg" alt="Menú">
+        <a  class="position-absolute top-50 start-0"  href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="grey"  viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+            </svg>
         </a>
-        <div class="offcanvas offcanvas-start  " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas offcanvas-start w-auto h-auto"  data-bs-scroll="true" data-bs-backdrop="true" tabindex="-" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="offcanvas-body__ul"> 
-                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="index.html#img-tienda" > Macetas  </a></li>
-                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="index.html#img-tienda" > Tazas </a></li>
-                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="index.html#img-tienda" >Platos </a></li>
-                    <li class="offcanvas-body__li"><a class="offcanvas-body__a"href="index.html#img-tienda" > Porta Sahumerios </a></li>
-                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="index.html#img-tienda"  > Otros productos </a>
-                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="index.html#img-tienda"> SALE!</a></li>
                     <li class="offcanvas-body__li">
-                        <form action="buscar" id="buscar" class="form-buscar-oculto">
-                            <input class="input-font" placeholder="Buscar">
+                        <form class="form w-auto">
+                            <div class="input">
+                                <input type="text" class="form-outline" placeholder="Buscar" name="search">
+                            </div>
                         </form>
-                    </li> 
+                    </li>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a-tienda"  href="tienda.html"> Tienda</a></li>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="tienda.html#platos"> Platos </a></li>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="tienda.html#macetas"> Macetas </a></li>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="tienda.html#tazas" > Tazas </a></li>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a"href="tienda.html#velas"> Porta velas </a></li>
+                    <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="tienda.html#joyeros" > Joyeros </a>
                     <hr />
                     <li class="offcanvas-body__li"><a class="offcanvas-body__a" href="comocomprar.html"> Cómo comprar </a>
+                    </li>
+                    <li class="offcanvas-body__li-cuenta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                        <a class="offcanvas-body__a" href="cuenta.html">Iniciar sesión</a>
                     </li>
                 </ul>
             </div>
         </div>
     <!--Fin navbar izquierdo-->
 
+    <!--Navbar derecho-->
+        <a  class="position-absolute top-50 end-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="#">
+            <svg  class="bag" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi bi-bag-fill bag" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
+            </svg>
+        </a>
+        <div class="offcanvas offcanvas-end w-auto h-auto" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p class="p-carrito">Tu carrito está vacio.</p>
+                <p class="p-carrito" >Inicia sesión <a class="a-carrito" href="cuenta.html">acá</a> y llenalo!</p> 
+            </div>
+        </div>
+    <!--Fin navbar derecho-->
     <!--Logo-->
-        <div class="nav justify-content">
-            <a href="index.html">
-                <img class="col-auto"  src="Multimedia/logo.svg" alt="Las Olas ">
+        <div >
+            <a  class="text-center" href="index.html">
+                <img class="img-logo"  src="Multimedia/logo.svg" alt="Las Olas">
             </a>
         </div>
     <!--fin logo-->
-
-    <!--Navbar derecho-->
-        <ul class="navbar-derecha">
-            <li class="navbar-derecha__li">
-                <a class="navbar-derecha__a" href="cuenta.html"><img class="login" src="Multimedia/login.svg" alt="Login">
-                </a>
-            </li>
-            <li class="navbar-derecha__li">
-                <a  class="navbar-derecha__a" href="carrito.html"><img  class="bag" src="Multimedia/bag.svg" alt="Carrito">
-                </a> 
-            </li>
-            <li class="navbar-derecha__li">
-                <a  class="navbar-derecha__a"href="#">
-                    <li class="navbar-derecha__a-li">
-                        <form action="buscar" id="buscar" class="form-buscar">
-                            <input class="input-font" placeholder="BUSCAR">
-                        </form>
-                    </li>
-                </a>
-            </li>
-        </ul>
-    <!--Fin navbar derecho-->
     </header>
 
     <main class="main-form">
@@ -112,29 +123,19 @@
     <!--fin form contacto-->
     </main>
     
-<!--footer-->
-
-    <!--Banner envios-->
-    <marquee  class="marquee-esp" behavior="alternate" scrolldelay="100" scrollamount="10" direction="left" loop="infinite" onmouseout="this.start()" onmouseover="this.stop()"><a href="comocomprar.html" target="_blank">🚀ENVÍOS A TODO EL PAÍS 🎁 Todos los medios de pago 🚀 ENVÍOS A TODO EL PAÍS 🎁 Todos los medios de pago 🚀ENVÍOS A TODO EL PAÍS 🎁Todos los medios de pago 🚀ENVÍOS A TODO EL PAÍS 🎁 Todos los medios de pago 🚀</a><a href="URL que Redirecciona al tema 2" target="_blank"></a></marquee>
-    </div>
-    <!--fin banner envios-->
-
+    <!--footer-->
     <footer>
         <!--Newsletter-->
         <section class="form">
             <form action="">
                 <div class="row d-flex justify-content-center">
-                    <div class="div-newsletter">
-                        <p class="pt-2">
-                            <strong>QUÉRES RECIBIR NOVEDADES Y PROMOS?</strong>
-                        </p>
-                    </div>
                     <div class="col-md-5 col-12">
                         <div class="form-outline form-white mb-4">
-                            <input type="email" id="form5Example2" class="form-control" placeholder="Ingresá tu email" />
+                            <p class="p-newsletter">Recibí todas nuestras ofertas en tu email</p>
+                            <input type="email" id="form5Example2" class="form-control" placeholder="NEWSLETTER!" />
                         </div>
                     </div>
-                    <div class="col-auto-newsletter">
+                    <div class="div-boton">
                         <button type="button" class="boton-newsletter"> Suscribirme</button>
                     </div>
                 </div>
@@ -152,9 +153,13 @@
                     <li class="footer__li"></li><a  class="footer__a" href="nosotros.html">Sobre Las Olas</a></li>
                     <li class="footer__li"><a class="footer__a" href="contacto.html">Dejanos un mensaje</a></li>
                     <section class="text-center">
-                        <a style="color: #dd4b39;" href="#!" role="button"><i class="fab fa-google fa-lg"></i></a>
-                        <a style="color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a style="color: #dd4b39;" href="https://myaccount.google.com/" target="_blank" role="button"><i class="fab fa-google fa-lg"></i></a>
+                        <a style="color: #ac2bac;" href="https://www.instagram.com/" target="_blank"href="#!" role="button"><i class="fab fa-instagram fa-lg"></i></a>
                     </section>
+                    <div>
+                        <p class="p-desarrollo">Desarrollado por Malen Ojeda</p>
+                    </div>
+                </div>
             </div>
         </section>
     </footer>
