@@ -37,12 +37,7 @@
         padding-top: 10px;
         font-size: 1.5rem;
         color:$font_color;
-        font-family: $font_space;
-        font-weight: bolder;
-        &-cuenta{
-            @include li;
-            font-family: $font_space;
-        }
+        font-family: $font_lato;
     }
     &__a{
         text-decoration: none;
@@ -66,7 +61,7 @@
 /*Nav derecho*/
 .offcanvas-body{
     .p-carrito{
-        font-family: $font_space;
+        font-family: $font_lato;
         .a-carrito{
             color: $font_color;
         }

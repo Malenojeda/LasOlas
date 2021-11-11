@@ -323,14 +323,7 @@
   padding-top: 10px;
   font-size: 1.5rem;
   color: #201f1f;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: bolder;
-}
-
-.offcanvas-body__li-cuenta {
-  list-style: none;
-  list-style-type: none;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .offcanvas-body__a {
@@ -358,7 +351,7 @@
 
 /*Nav derecho*/
 .offcanvas-body .p-carrito {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .offcanvas-body .p-carrito .a-carrito {
