@@ -8,15 +8,15 @@
     &__a{
         color: $font_color;
         font-size: 1.1rem;
+        font-family: $font_lato;
         &:hover{
             color: $font_color;
         }
     }
     .form{
         margin-top: 3%;
-        font-family:$font_space;
+        font-family:$font_lato;
         padding: 0%;
-    
     }
     
 }
@@ -25,7 +25,7 @@
 }
 .p-newsletter{
     text-align: center;
-    font-family:$font_space;
+    font-family: $font_lato;
     font-size: 1.6rem;
 
 }
@@ -54,7 +54,7 @@
     background-color: $color_blanco;
     width: 20%;
     margin-left: 40%;
-    font-family:$font_space;
+    font-family: $font_lato;
     &:hover{
         text-decoration-line: underline;
     }
@@ -64,5 +64,5 @@
     margin: 0px;
 }
 .text-center{
-    font-family: $font_space;
+    font-family: $font_lato;
 }
