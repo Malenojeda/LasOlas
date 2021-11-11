@@ -16,6 +16,7 @@
 }
 
 .div-banner{
+    position: sticky;
     background-color: $bg_banner;
     .p-banner{
         text-align: center;
@@ -40,7 +41,6 @@
         font-weight: bolder;
         &-cuenta{
             @include li;
-            margin-top:110%;
             font-family: $font_space;
         }
     }
