@@ -2,6 +2,7 @@
 
 .footer{
     position: static;
+    bottom: 0%;
     &__li{
         list-style: none;
     }
@@ -25,7 +26,7 @@
 }
 .p-newsletter{
     text-align: center;
-    font-family: $font_lato;
+    font-family: $font_space;
     font-size: 1.6rem;
 
 }

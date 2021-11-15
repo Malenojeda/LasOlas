@@ -5,7 +5,7 @@
     
 }
 
-/*Carousel Index*/
+/*Main Index*/
 
 .carousel-caption{
     position: relative;
@@ -25,7 +25,6 @@
     background-size: cover;
 }
 
-/*Categoria de productos index*/
 .div-categorias{
     display: grid; 
     grid-auto-columns: 1fr; 
@@ -67,7 +66,7 @@
     margin-top: 4%;
 }
 
-/*Imagenes tienda*/
+/* Main Tienda*/
 .nav-productos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -91,7 +90,7 @@
 }
 
 
-/*Titulos productos*/
+
 .p-productos{
     margin-top: 5%;
     font-family:$font_space;
@@ -99,7 +98,7 @@
     text-align: center;
 }
 
-/*Texto sobre nosotros*/
+
 .nav-nosotros{
     display: grid;
     text-align: center;
@@ -110,12 +109,12 @@
     gap: 1px 9px; 
     margin-bottom: 10%;
     &__div{
-        font-family:$font_space;
+        font-family:$font_lato;
         font-size: 1.3rem;
     }
 }
 
-/*texto como comprar*/
+/*Main Como comprar*/
 
 .nav-comprar{
     @extend .nav-nosotros;
@@ -137,7 +136,7 @@
     }
 }
 
-/*cuenta*/
+/* Main Cuenta*/
 
 .main-cuenta{
     display: grid; 
@@ -148,7 +147,13 @@
     gap: 1px 9px;
 }
 
-/*contactanos*/
+.form-check-label{
+    font-family:$font_lato;
+    font-weight: normal;
+    padding-left: 1%;
+}
+
+/* Main Contactanos*/
 
 .main-form{
     display: grid; 
@@ -160,7 +165,7 @@
         justify-self: center;
         padding-bottom: 2%;
         &-p{
-            font-family:$font_space;
+            font-family:$font_lato;
             font-size: 1rem;
             text-align: center;
         }
@@ -170,7 +175,7 @@
         text-align: left;
     }
     .col-auto__form{
-        font-family: $font_space;
+        font-family: $font_lato;
         .form-control{
             text-align: left;
         }
