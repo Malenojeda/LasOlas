@@ -76,8 +76,8 @@ body{
         .nav-nosotros{
             &__div{
                 font-size: 1.4rem;
-                padding-bottom: 10%;
-                padding-top: 8%;
+                padding-top: 15%;
+                padding-bottom: 15%;
             }
         }
         /*Formulario de contacto*/
@@ -86,9 +86,8 @@ body{
         }
         /*Footer*/
         footer{
-            position: static;
+            position: relative;
             bottom: 0%;
-            margin-bottom: 0%;
         }
     }
     @media only screen and (min-width: 576px){
