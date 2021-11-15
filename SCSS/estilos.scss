@@ -23,6 +23,7 @@ body{
         
         /*Banner envios*/
         .div-banner{
+            position: sticky;
             .p-banner{
                 font-size: 11px;
             }
@@ -60,6 +61,16 @@ body{
             row-gap: 2%;
             margin-top: 2%;
             margin-bottom: 22%;
+        }
+        /*seccion carousel*/
+        .carousel-indicators{
+            padding-bottom: 23%;
+        }
+        .carousel-caption{
+            p{
+                padding-bottom: 40%; 
+            }
+            
         }
         /*Formulario de contacto*/
         .main-form__texto-p{
@@ -101,6 +112,16 @@ body{
         .col-md-5 .col-12{
             padding: 0px;
             margin: 0px;
+        }
+        /*seccion carousel*/
+        .carousel-indicators{
+            padding-bottom: 15%;
+        }
+        .carousel-caption{
+            p{
+                padding-bottom: 20%; 
+            }
+            
         }
         /*Formulario de contacto*/
         .main-form__texto-p{
@@ -150,6 +171,16 @@ body{
             padding: 0px;
             margin: 0px;
         }
+        /*seccion carousel*/
+        .carousel-indicators{
+            padding-bottom: 10%;
+        }
+        .carousel-caption{
+            p{
+                padding-bottom: 5%; 
+            }
+            
+        }
     }
     /*PANTALLAS GRANDES*/
     @media only screen and (min-width: 992px){
@@ -178,6 +209,16 @@ body{
         .col-md-5 .col-12{
             padding: 0px;
             margin: 0px;
+        }
+        /*seccion carousel*/
+        .carousel-indicators{
+            padding-bottom: 3%;
+        }
+        .carousel-caption{
+            p{
+                padding-bottom: 2%; 
+            }
+            
         }
     }
     @media only screen and (min-width: 1024px) {
@@ -223,6 +264,16 @@ body{
         .col-md-5 .col-12{
             padding: 0px;
             margin: 0px;
+        }
+        /*seccion carousel*/
+        .carousel-indicators{
+            padding-bottom: 3%;
+        }
+        .carousel-caption{
+            p{
+                padding-bottom: 2%; 
+            }
+            
         }
     }
 }

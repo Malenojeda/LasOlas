@@ -302,16 +302,14 @@
   top: 0px;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.979);
-  /*Banner envios*/
 }
 
-.sticky .div-banner {
-  position: -webkit-sticky;
-  position: sticky;
+/*Banner envios*/
+.div-banner {
   background-color: #c7c4c2;
 }
 
-.sticky .div-banner .p-banner {
+.div-banner .p-banner {
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase;
@@ -322,7 +320,6 @@
   padding-bottom: 0.5%;
 }
 
-/*Banner envios*/
 /*Nav izquierdo*/
 .offcanvas-body__li {
   list-style: none;
@@ -390,7 +387,12 @@ body {
     /*Logo*/
     /*Productos tienda*/
     /*Sección categoria Index*/
+    /*seccion carousel*/
     /*Formulario de contacto*/
+  }
+  body .div-banner {
+    position: -webkit-sticky;
+    position: sticky;
   }
   body .div-banner .p-banner {
     font-size: 11px;
@@ -425,6 +427,12 @@ body {
     margin-top: 2%;
     margin-bottom: 22%;
   }
+  body .carousel-indicators {
+    padding-bottom: 23%;
+  }
+  body .carousel-caption p {
+    padding-bottom: 40%;
+  }
   body .main-form__texto-p {
     font-size: 1.2rem;
   }
@@ -436,6 +444,7 @@ body {
     /*Logo*/
     /*Productos tienda*/
     /*Sección categoria Index*/
+    /*seccion carousel*/
     /*Formulario de contacto*/
   }
   body .div-banner .p-banner {
@@ -466,6 +475,12 @@ body {
     padding: 0px;
     margin: 0px;
   }
+  body .carousel-indicators {
+    padding-bottom: 15%;
+  }
+  body .carousel-caption p {
+    padding-bottom: 20%;
+  }
   body .main-form__texto-p {
     font-size: 1.4rem;
   }
@@ -478,6 +493,7 @@ body {
     /*Productos tienda*/
     /*Formulario contacto*/
     /*Seccion categoria productos Index*/
+    /*seccion carousel*/
   }
   body .div-banner .p-banner {
     font-size: 1.2rem;
@@ -513,6 +529,12 @@ body {
     padding: 0px;
     margin: 0px;
   }
+  body .carousel-indicators {
+    padding-bottom: 10%;
+  }
+  body .carousel-caption p {
+    padding-bottom: 5%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -520,6 +542,7 @@ body {
     /*Logo*/
     /*Productos tienda*/
     /*Seccion categoria productos Index*/
+    /*seccion carousel*/
   }
   body .text-center .img-logo {
     width: 60%;
@@ -543,6 +566,12 @@ body {
     padding: 0px;
     margin: 0px;
   }
+  body .carousel-indicators {
+    padding-bottom: 3%;
+  }
+  body .carousel-caption p {
+    padding-bottom: 2%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -551,6 +580,7 @@ body {
     /*Productos tienda*/
     /*Footer*/
     /*Seccion categoria productos Index*/
+    /*seccion carousel*/
   }
   body .text-center .img-logo {
     width: 55%;
@@ -593,6 +623,12 @@ body {
   body .col-md-5 .col-12 {
     padding: 0px;
     margin: 0px;
+  }
+  body .carousel-indicators {
+    padding-bottom: 3%;
+  }
+  body .carousel-caption p {
+    padding-bottom: 2%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
