@@ -195,18 +195,18 @@
   display: -ms-grid;
   display: grid;
   text-align: center;
-  padding: 5%;
+  padding: 0%;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 1px 9px;
-  margin-bottom: 10%;
+  margin-bottom: 0%;
 }
 
 .nav-nosotros__div, .nav-comprar__div {
   font-family: "Lato", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 /*Main Como comprar*/
@@ -388,7 +388,9 @@ body {
     /*Productos tienda*/
     /*Sección categoria Index*/
     /*seccion carousel*/
+    /*Seccion Nosotros*/
     /*Formulario de contacto*/
+    /*Footer*/
   }
   body .div-banner {
     position: -webkit-sticky;
@@ -432,6 +434,10 @@ body {
   }
   body .carousel-caption p {
     padding-bottom: 40%;
+  }
+  body .nav-nosotros__div, body .nav-comprar__div {
+    font-size: 1.5rem;
+    padding-bottom: 10%;
   }
   body .main-form__texto-p {
     font-size: 1.2rem;
@@ -547,6 +553,7 @@ body {
     /*Productos tienda*/
     /*Seccion categoria productos Index*/
     /*seccion carousel*/
+    /*Seccion Nosotros*/
   }
   body .text-center .img-logo {
     width: 60%;
@@ -575,6 +582,12 @@ body {
   }
   body .carousel-caption p {
     padding-bottom: 2%;
+  }
+  body .nav-nosotros, body .nav-comprar {
+    padding-top: 10%;
+  }
+  body .nav-nosotros__div, body .nav-comprar__div {
+    font-size: 1.5rem;
   }
 }
 

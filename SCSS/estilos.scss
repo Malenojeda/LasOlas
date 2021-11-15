@@ -72,10 +72,18 @@ body{
             }
             
         }
+        /*Seccion Nosotros*/
+        .nav-nosotros{
+            &__div{
+                font-size: 1.5rem;
+                padding-bottom: 10%;
+            }
+        }
         /*Formulario de contacto*/
         .main-form__texto-p{
             font-size: 1.2rem;
         }
+        /*Footer*/
         footer{
             position: static;
             bottom: 0%;
@@ -183,7 +191,6 @@ body{
             p{
                 padding-bottom: 5%; 
             }
-            
         }
     }
     /*PANTALLAS GRANDES*/
@@ -222,7 +229,13 @@ body{
             p{
                 padding-bottom: 2%; 
             }
-            
+        }
+        /*Seccion Nosotros*/
+        .nav-nosotros{
+            padding-top: 10%;
+            &__div{
+                font-size: 1.5rem;
+            }
         }
     }
     @media only screen and (min-width: 1024px) {
