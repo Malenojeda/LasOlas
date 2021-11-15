@@ -2,8 +2,7 @@
 /*Colores*/
 /*Font*/
 .footer {
-  position: static;
-  bottom: 0%;
+  background-color: #fdfdfd;
 }
 
 .footer__li {
@@ -513,6 +512,7 @@ body {
     /*Seccion categoria productos Index*/
     /*seccion carousel*/
     /*Seccion Nosotros*/
+    /*Main general*/
   }
   body .div-banner .p-banner {
     font-size: 1.2rem;
@@ -562,6 +562,19 @@ body {
     padding-top: 0%;
     padding-bottom: 8%;
   }
+  body .main-cuenta {
+    height: 700px;
+  }
+  body .nav-nosotros, body .nav-comprar {
+    height: 700px;
+    padding-top: 25%;
+  }
+  body .main-form {
+    height: 700px;
+  }
+  body .nav-comprar {
+    padding-top: 8%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -571,6 +584,7 @@ body {
     /*Seccion categoria productos Index*/
     /*seccion carousel*/
     /*Seccion Nosotros*/
+    /*Main general*/
   }
   body .text-center .img-logo {
     width: 60%;
@@ -606,6 +620,19 @@ body {
   body .nav-nosotros__div, body .nav-comprar__div {
     font-size: 1.6rem;
   }
+  body .main-cuenta {
+    height: 500px;
+  }
+  body .nav-nosotros, body .nav-comprar {
+    height: 500px;
+    padding-top: 25%;
+  }
+  body .main-form {
+    height: 500px;
+  }
+  body .nav-comprar {
+    padding-top: 5%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -615,6 +642,7 @@ body {
     /*Footer*/
     /*Seccion categoria productos Index*/
     /*seccion carousel*/
+    /*Main general*/
   }
   body .text-center .img-logo {
     width: 55%;
@@ -638,7 +666,7 @@ body {
     font-size: 4rem;
   }
   body .row.d-flex.justify-content-center {
-    margin: 0px;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
@@ -663,6 +691,20 @@ body {
   }
   body .carousel-caption p {
     padding-bottom: 2%;
+  }
+  body .main-cuenta {
+    height: 500px;
+  }
+  body .nav-nosotros, body .nav-comprar {
+    height: 400px;
+    padding-top: 10%;
+  }
+  body .main-form {
+    height: 500px;
+  }
+  body .nav-comprar {
+    padding-top: 5%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

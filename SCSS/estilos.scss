@@ -164,6 +164,7 @@ body{
                 padding-left: 35%;
             }
         }
+        
         /*Productos tienda*/
         .nav-productos{
             grid-template-columns: repeat(2, 1fr);
@@ -210,6 +211,21 @@ body{
                 padding-bottom: 8%;
             }
         }
+        /*Main general*/
+        .main-cuenta{
+            height: 700px;
+        }
+        .nav-nosotros{
+            height: 700px;
+            padding-top: 25%;
+        }
+        .main-form{
+            height: 700px;
+        }
+        .nav-comprar{
+            padding-top: 8%;
+        }
+
     }
     /*PANTALLAS GRANDES*/
     @media only screen and (min-width: 992px){
@@ -255,6 +271,20 @@ body{
                 font-size: 1.6rem;
             }
         }
+        /*Main general*/
+        .main-cuenta{
+            height: 500px;
+        }
+        .nav-nosotros{
+            height: 500px;
+            padding-top: 25%;
+        }
+        .main-form{
+            height: 500px;
+        }
+        .nav-comprar{
+            padding-top: 5%;
+        }
     }
     @media only screen and (min-width: 1024px) {
         /*Logo*/
@@ -280,7 +310,7 @@ body{
         }
         /*Footer*/
         .row.d-flex.justify-content-center{
-            margin: 0px;
+            margin-top: 0px;
             margin-left: 0px;
             margin-right: 0px;
             width: 100%;
@@ -308,7 +338,21 @@ body{
             p{
                 padding-bottom: 2%; 
             }
-            
+        }
+        /*Main general*/
+        .main-cuenta{
+            height: 500px;
+        }
+        .nav-nosotros{
+            height: 400px;
+            padding-top: 10%;
+        }
+        .main-form{
+            height: 500px;
+        }
+        .nav-comprar{
+            padding-top: 5%;
+            height: auto;
         }
     }
 }

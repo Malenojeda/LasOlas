@@ -1,8 +1,7 @@
 @import "varios";
 
 .footer{
-    position: static;
-    bottom: 0%;
+    background-color: $color_blanco;
     &__li{
         list-style: none;
     }
