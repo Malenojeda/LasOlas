@@ -76,6 +76,10 @@ body{
         .main-form__texto-p{
             font-size: 1.2rem;
         }
+        footer{
+            position: static;
+            bottom: 0%;
+        }
     }
     @media only screen and (min-width: 576px){
         /*Banner envios*/
