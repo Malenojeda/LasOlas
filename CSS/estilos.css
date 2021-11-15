@@ -207,6 +207,7 @@
 .nav-nosotros__div, .nav-comprar__div {
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
+  height: 100%;
 }
 
 /*Main Como comprar*/
@@ -457,6 +458,7 @@ body {
     /*Sección categoria Index*/
     /*seccion carousel*/
     /*Formulario de contacto*/
+    /*Seccion Nosotros*/
   }
   body .div-banner .p-banner {
     font-size: 1.2rem;
@@ -495,6 +497,11 @@ body {
   body .main-form__texto-p {
     font-size: 1.4rem;
   }
+  body .nav-nosotros__div, body .nav-comprar__div {
+    font-size: 1.4rem;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -505,6 +512,7 @@ body {
     /*Formulario contacto*/
     /*Seccion categoria productos Index*/
     /*seccion carousel*/
+    /*Seccion Nosotros*/
   }
   body .div-banner .p-banner {
     font-size: 1.2rem;
@@ -546,6 +554,14 @@ body {
   body .carousel-caption p {
     padding-bottom: 5%;
   }
+  body .nav-nosotros, body .nav-comprar {
+    padding-top: 5%;
+  }
+  body .nav-nosotros__div, body .nav-comprar__div {
+    font-size: 1.5rem;
+    padding-top: 0%;
+    padding-bottom: 8%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -585,10 +601,10 @@ body {
     padding-bottom: 2%;
   }
   body .nav-nosotros, body .nav-comprar {
-    padding-top: 10%;
+    padding-top: 5%;
   }
   body .nav-nosotros__div, body .nav-comprar__div {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 

@@ -140,6 +140,14 @@ body{
         .main-form__texto-p{
             font-size: 1.4rem;
         }
+        /*Seccion Nosotros*/
+        .nav-nosotros{
+            &__div{
+                font-size: 1.4rem;
+                padding-top: 5%;
+                padding-bottom: 10%;
+            }
+        }
     }
     /*PANTALLAS MEDIANAS*/
     @media only screen and (min-width: 768px){
@@ -193,6 +201,15 @@ body{
                 padding-bottom: 5%; 
             }
         }
+        /*Seccion Nosotros*/
+        .nav-nosotros{
+            padding-top: 5%;
+            &__div{
+                font-size: 1.5rem;
+                padding-top: 0%;
+                padding-bottom: 8%;
+            }
+        }
     }
     /*PANTALLAS GRANDES*/
     @media only screen and (min-width: 992px){
@@ -233,9 +250,9 @@ body{
         }
         /*Seccion Nosotros*/
         .nav-nosotros{
-            padding-top: 10%;
+            padding-top: 5%;
             &__div{
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
         }
     }
