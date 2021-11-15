@@ -436,8 +436,9 @@ body {
     padding-bottom: 40%;
   }
   body .nav-nosotros__div, body .nav-comprar__div {
-    font-size: 1.5rem;
-    padding-bottom: 10%;
+    font-size: 1.4rem;
+    padding-bottom: 30%;
+    padding-top: 5%;
   }
   body .main-form__texto-p {
     font-size: 1.2rem;
@@ -445,6 +446,7 @@ body {
   body footer {
     position: static;
     bottom: 0%;
+    margin-bottom: 0%;
   }
 }
 

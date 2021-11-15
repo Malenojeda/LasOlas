@@ -75,8 +75,9 @@ body{
         /*Seccion Nosotros*/
         .nav-nosotros{
             &__div{
-                font-size: 1.5rem;
-                padding-bottom: 10%;
+                font-size: 1.4rem;
+                padding-bottom: 30%;
+                padding-top: 5%;
             }
         }
         /*Formulario de contacto*/
@@ -87,6 +88,7 @@ body{
         footer{
             position: static;
             bottom: 0%;
+            margin-bottom: 0%;
         }
     }
     @media only screen and (min-width: 576px){
