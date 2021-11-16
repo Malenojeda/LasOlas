@@ -89,6 +89,21 @@ body{
             position: relative;
             bottom: 0%;
         }
+        /*Main general medidas*/
+        .main-cuenta{
+            height: 500px;
+        }
+        .nav-nosotros{
+            height: 400px;
+            padding-top: 10%;
+        }
+        .main-form{
+            height: 500px;
+        }
+        .nav-comprar{
+            padding-top: 5%;
+            height: auto;
+        }
     }
     @media only screen and (min-width: 576px){
         /*Banner envios*/
@@ -148,6 +163,21 @@ body{
                 padding-bottom: 10%;
             }
         }
+        /*Main general medidas*/
+        .main-cuenta{
+            height: 500px;
+        }
+        .nav-nosotros{
+            height: 400px;
+            padding-top: 10%;
+        }
+        .main-form{
+            height: 500px;
+        }
+        .nav-comprar{
+            padding-top: 5%;
+            height: auto;
+        }
     }
     /*PANTALLAS MEDIANAS*/
     @media only screen and (min-width: 768px){
@@ -164,7 +194,6 @@ body{
                 padding-left: 35%;
             }
         }
-        
         /*Productos tienda*/
         .nav-productos{
             grid-template-columns: repeat(2, 1fr);
@@ -211,7 +240,7 @@ body{
                 padding-bottom: 8%;
             }
         }
-        /*Main general*/
+        /*Main general medidas*/
         .main-cuenta{
             height: 700px;
         }
@@ -271,7 +300,7 @@ body{
                 font-size: 1.6rem;
             }
         }
-        /*Main general*/
+        /*Main general medidas*/
         .main-cuenta{
             height: 500px;
         }
@@ -339,7 +368,7 @@ body{
                 padding-bottom: 2%; 
             }
         }
-        /*Main general*/
+        /*Main general medidas*/
         .main-cuenta{
             height: 500px;
         }
